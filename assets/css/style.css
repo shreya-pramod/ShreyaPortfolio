@@ -266,6 +266,24 @@ h6 {
   min-width: 300px;
 }
 
+.btn.btn-primary {
+  background-color: #149ddd;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.btn.btn-primary:hover {
+  background-color: #ffcd6b;
+  transform: scale(1.05);
+  text-decoration: underline; /* Remove underline from the link on hover */
+}
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
