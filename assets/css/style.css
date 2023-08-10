@@ -79,15 +79,18 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #040b14;  
   overflow-y: auto;
 }
 
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+  height: 180px;
+  width: 180px; /* Set width to match height for a perfect circle */
+  border: 10px solid #2c2f3f;
+  border-radius: 70%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the circular area */
 }
 
 #header .profile h1 {
@@ -241,8 +244,9 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/profBack.jpg") center left; /* Adjust the position here */
   background-size: cover;
+  background-position: center 40%; /* Adjust the offset value as needed */
 }
 
 #hero:before {
@@ -257,7 +261,7 @@ h6 {
 }
 
 #hero .hero-container {
-  position: relative;
+  position: right;
   z-index: 2;
   min-width: 300px;
 }
